@@ -36,3 +36,25 @@ az storage blob generate-sas \
     --permissions r \
     --expiry 2026-01-20T00:00:00Z \
     --full-uri --auth-mode key
+
+    ---
+
+## ✅ Live Validation & Security Proof
+
+### 🔗 Secure SAS Access (Verified)
+The following link is a signed URI generated for this demo. It allows viewing the private file until the expiry timestamp is reached.
+
+**Test the Secure Link:** [Verified secret.txt SAS Link](https://mobashervault17099.blob.core.windows.net/private-files/secret.txt?se=2026-01-19T12%3A00%3A00Z&sp=r&sv=2022-11-02&sr=b&sig=FjOh3KqX1OzwXtYUya6boh%2FhcEi9aAhTo8CEho3vXJ0%3D)
+
+---
+
+### 📸 Security Verification Screenshot
+![SAS Browser Proof](./screenshots/sas-browser-proof.png)
+*(Description: Successful rendering of the private document via SAS signature. Direct access attempts to this URL without the signature result in a 403 Authentication Failed error.)*
+
+---
+
+## 🛡️ Industry Skills Demonstrated
+* **Security Governance:** Implementing time-limited access tokens for ephemeral security.
+* **Identity & Access Management (IAM):** Utilizing cryptographic signatures to reduce attack surface.
+* **Infrastructure as Code (IaC):** Using Azure CLI for reproducible and audited security configurations.
